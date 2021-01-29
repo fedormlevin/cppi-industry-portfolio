@@ -139,4 +139,10 @@ def run_cppi(risky_r, safe_r=None, m=3, start=1000, floor=0.8, riskfree_rate=0.0
         "floor": floorval_history
     }
     return backtest_result, safe_r
-```  
+```
+## Running the model
+```python
+btr = run_cppi(risky['2020':], safe['2020':], m=6, start=15763, floor=0.8, drawdown=0.1)
+ax = btr[0]["Wealth"].plot(figsize=(15,6))
+btr[0]["Risky Wealth"].plot(ax=ax, style="--", linewidth=3)
+```
