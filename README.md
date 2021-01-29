@@ -146,3 +146,4 @@ btr = run_cppi(risky['2020':], safe['2020':], m=6, start=15763, floor=0.8, drawd
 ax = btr[0]["Wealth"].plot(figsize=(15,6))
 btr[0]["Risky Wealth"].plot(ax=ax, style="--", linewidth=3)
 ```
+![image info](./etf.png)
