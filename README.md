@@ -36,4 +36,16 @@ import matplotlib.pyplot as plt
 %matplotlib inline
 import yfinance as yf
 ```
+## Getting prices
+As our risky assets we'll use SPDR S&P 500 ETF (SPY), which tracks performance of S&P500. We'll compare it to WisdomTree EM Quality Dividend Growth Fund (DGRE) to get a sence of exposure to Emerging Markets.<br>
+We'll use Vanguard Short-Term TIPS ETF as our "safe" asset. We will increase allocation to TIPS as long as SPY and DGRE are dropping.
+```python
+sp2 = yf.Ticker('SPY').history(period='max') #S&P500
+hqualem_eq = yf.Ticker('DGRE').history(period='max') #WisdomTree EM Quality Dividend Growth Fund
+tips = yf.Ticker('VTIP').history(period='max') #Vanguard Short-Term TIPS ETF
+```
+
+
+
+
 
