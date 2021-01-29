@@ -10,6 +10,7 @@ CPPI allows to calculate allocations to risky and "safe" assets based on the ris
 ![image info](./riskyalloc.png)
 
 # Performance Comparison
+Dynamic reallocation to STIP ETF reduced max drawdown by 17% and 38% for Transportation and Energy Minerals respectfully
 ### Bond + Equity combination
 | Industry | Annualized Return | Annualized Vol | Sharpe Ratio | Max Drawdown |
 |--------------|---|---|---|---|
