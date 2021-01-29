@@ -22,3 +22,12 @@ Dynamic reallocation to STIP ETF reduced max drawdown by 17% and 38% for Transpo
 |--------------|---|---|---|---|
 |Transportation| 0.009863	  |  0.079046 | -0.248029	  |  -0.348676 |
 |Energy Minerals| -0.016292	  | 0.126969	  | -0.354979	  |-0.586560   |
+
+# Quick Example
+I used 
+```python
+robin_stocks
+```
+library to pull the prices for each stock in S&P500, their corresponsing sectors and capitalization. I found ```python
+robin_stocks
+```
