@@ -40,9 +40,25 @@ import yfinance as yf
 As our risky assets we'll use SPDR S&P 500 ETF (SPY), which tracks performance of S&P500. We'll compare it to WisdomTree EM Quality Dividend Growth Fund (DGRE) to get a sence of exposure to Emerging Markets.<br>
 We'll use Vanguard Short-Term TIPS ETF as our "safe" asset. We will increase allocation to TIPS as long as SPY and DGRE are dropping.
 ```python
-sp2 = yf.Ticker('SPY').history(period='max') #S&P500
 hqualem_eq = yf.Ticker('DGRE').history(period='max') #WisdomTree EM Quality Dividend Growth Fund
+hqualem_eq = hqualem_eq.add_suffix('_DGRE')
+
+sp2 = yf.Ticker('SPY').history(period='max') #S&P500
+sp2 = sp2.add_suffix('_SPY')
+
+risky_price = pd.merge(hqualem_eq, sp2, left_index=True, right_index=True)
+risky_price = risky_price.filter(like='Close')
+ii = ['DGRE', 'SPY']
+risky_price = risky_price.rename(columns={f'Close_{i}': i for i in ii})
+risky = risky_price[['DGRE', 'SPY']].pct_change().dropna()
+
+
 tips = yf.Ticker('VTIP').history(period='max') #Vanguard Short-Term TIPS ETF
+tips = tips.add_suffix('_VTIP')
+
+safe_price = tips.filter(like='Close')
+safe_price = safe_price.rename(columns={'Close_VTIP': 'VTIP'})
+safe = safe_price['VTIP'].pct_change().dropna()
 ```
 
 
