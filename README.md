@@ -11,7 +11,7 @@ CPPI allows to calculate allocations to risky and "safe" assets based on the ris
 
 # Performance Comparison
 ### Bond + Equity combination summary
-Industry | Annualized Return | Annualized Vol | Sharpe Ratio | Max Drawdown
----|---------|----|----|
-1 | 0.925511 | fsf | sff | fss
-0 | 0.074489 | fsf | sfsf | sfsf
+Label | Ratio
+---|---------
+1 | 0.925511
+0 | 0.074489
