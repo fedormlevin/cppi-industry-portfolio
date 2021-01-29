@@ -148,3 +148,5 @@ ax = btr[0]["Wealth"].plot(figsize=(15,6))
 btr[0]["Risky Wealth"].plot(ax=ax, style="--", linewidth=3)
 ```
 ![image info](./etf.png)
+
+As shown above with the help of VTIP our DGRE and SPY portfolios were able to save most of its wealth during significant drops in the market
