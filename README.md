@@ -38,7 +38,7 @@ import yfinance as yf
 ```
 ## Getting prices
 As our risky assets we'll use SPDR S&P 500 ETF (SPY), which tracks performance of S&P500. We'll compare it to WisdomTree EM Quality Dividend Growth Fund (DGRE) to get a sence of exposure to Emerging Markets.<br>
-We'll use Vanguard Short-Term TIPS ETF as our "safe" asset. We will increase allocation to TIPS as long as SPY and DGRE are dropping.
+We'll use Vanguard Short-Term TIPS ETF (VTIP) as our "safe" asset. We will increase allocation to VTIP as long as SPY and DGRE are dropping.
 ```python
 hqualem_eq = yf.Ticker('DGRE').history(period='max') #WisdomTree EM Quality Dividend Growth Fund
 hqualem_eq = hqualem_eq.add_suffix('_DGRE')
