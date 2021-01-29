@@ -141,7 +141,7 @@ def run_cppi(risky_r, safe_r=None, m=3, start=1000, floor=0.8, riskfree_rate=0.0
     return backtest_result, safe_r
 ```
 ## Running the model
-I'll pick high multiplier to be highly exposed to the risky asset but will limit my drawdown to 10% 
+I'll pick high multiplier to be more exposed to the risky asset but will limit my drawdown to 10% 
 ```python
 btr = run_cppi(risky['2020':], safe['2020':], m=6, start=15763, floor=0.8, drawdown=0.1)
 ax = btr[0]["Wealth"].plot(figsize=(15,6))
