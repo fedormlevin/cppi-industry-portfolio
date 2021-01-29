@@ -63,7 +63,8 @@ safe = safe_price['VTIP'].pct_change().dropna()
 ## CPPI model
 
 V<sub>risky = m*(V - F)<br>
-  where V<sub>risky is the value of assets in the risky portfolio <br>
+  where V<sub>risky 
+is the value of assets in the risky portfolio <br>
   V is the starting value of the total portfolio<br> 
   F is the asset level below which the total portfolio should not fall<br> m >= 1 is the multiplier (how risky you wanna be)
 
