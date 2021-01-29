@@ -24,10 +24,16 @@ Dynamic reallocation to STIP ETF reduced max drawdown by 17% and 38% for Transpo
 |Energy Minerals| -0.016292	  | 0.126969	  | -0.354979	  |-0.586560   |
 
 # Quick Example
-I used 
+I used "robin_stocks" library to pull the prices for each stock in S&P500, their corresponsing sectors and capitalization. I found robin_stocks to be the most stable and reliable tool for pulling data for a large list of securities. <br>
+In this example I want to give a quick example of how to perform CPPI algorithm only using free publickly available libraries such as "yfinance" and "yahoo_fin"
+
+## Dependencies
 ```python
-robin_stocks
+import pandas as pd
+from datetime import date
+import yahoo_fin.stock_info as si
+import matplotlib.pyplot as plt
+%matplotlib inline
+import yfinance as yf
 ```
-library to pull the prices for each stock in S&P500, their corresponsing sectors and capitalization. I found ```python
-robin_stocks
-```
+
