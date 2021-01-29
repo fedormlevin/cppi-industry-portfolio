@@ -60,7 +60,16 @@ safe_price = tips.filter(like='Close')
 safe_price = safe_price.rename(columns={'Close_VTIP': 'VTIP'})
 safe = safe_price['VTIP'].pct_change().dropna()
 ```
+## CPPI model
 
+${V}_{risky} = m*(V - F)$ <br>
+where
+${V}_{risky}$ is the value of assets in the risky portfolio
+$V$ is the starting value of the total portfolio
+$F$ is the asset level below which the total portfolio should not fall and
+$m \geq 1$ is the multiplier (how risky you wanna be) <br>
+<br>
+We are going to use STIP ETF as "safe" asset where $V - {V}_{risky}$ will be invested
 
 
 
