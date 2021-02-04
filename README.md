@@ -14,14 +14,14 @@ Dynamic reallocation to STIP ETF reduced max drawdown by 17% and 38% for Transpo
 ### Bond + Equity combination
 | Industry | Annualized Return | Annualized Vol | Sharpe Ratio | Max Drawdown |
 |--------------|---|---|---|---|
-|Transportation| 0.004125  |  0.029184 | -0.862939	  |  -0.17508 |
-|Energy Minerals| -0.007116	  | 0.022741	  | -1.588453	  |-0.21078   |
+|Transportation| 0.087463  |  0.134835 | 0.413803		  |  -0.175079 |
+|Energy Minerals| -0.134504	  | 0.103602	  | -1.541758	  |-0.210990   |
 
 ### Pure Equity portfolio
 | Industry | Annualized Return | Annualized Vol | Sharpe Ratio | Max Drawdown |
 |--------------|---|---|---|---|
-|Transportation| 0.009863	  |  0.079046 | -0.248029	  |  -0.348676 |
-|Energy Minerals| -0.016292	  | 0.126969	  | -0.354979	  |-0.586560   |
+|Transportation| 0.224433		  |  0.362082 | 0.521387		  |  -0.348918 |
+|Energy Minerals| -0.275422	  | 0.579931		  | -0.511387		  |-0.587312   |
 
 # Quick Example
 I used "robin_stocks" library to pull the prices for each stock in S&P500, their corresponsing sectors and capitalization. I found robin_stocks to be the most stable and reliable tool for pulling data for a large list of securities. The steps are discribed in CPPI jupyter notebook, which is available under in this project's folder. <br>
