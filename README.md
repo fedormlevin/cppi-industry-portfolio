@@ -25,7 +25,7 @@ Dynamic reallocation to STIP ETF reduced max drawdown by 17% and 38% for Transpo
 
 # Quick Example
 I used "robin_stocks" library to pull the prices for each stock in S&P500, their corresponsing sectors and capitalization. I found robin_stocks to be the most stable and reliable tool for pulling data for a large list of securities. The steps are discribed in CPPI.ipynb jupyter notebook, which is available under in this project's folder. <br>
-In the example below I want to give a quick view of how to perform CPPI algorithm only using free publickly available libraries such as "yfinance" and "yahoo_fin"
+In the example below I want to give a quick view of how to perform CPPI algorithm using free publickly available libraries only such as "yfinance" and "yahoo_fin"
 
 ## Dependencies
 ```python
